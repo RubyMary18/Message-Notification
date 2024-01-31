@@ -57,16 +57,47 @@ main {
 }
 
 .notification-container {
-  background-color: red;
+  /* background-color: red; */
   width: 67%;
-  height: 250px;
-  display: flex;
-  justify-content: end;
+  /* height: 250px; */
   position: absolute;
   top: 5px;
   right: 15.5%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: end; */
+  align-items: end;
 }
 
+.notification-bell {
+  width: 80px;
+  height: 80px;
+  background-color: #0c0e41;
+  border-radius: 50%;
+}
+
+.bell-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-container {
+  -webkit-box-shadow: 6px 13px 53px 3px rgba(232, 235, 255, 0.75);
+  -moz-box-shadow: 6px 13px 53px 3px rgba(232, 235, 255, 0.75);
+  box-shadow: 6px 13px 53px 3px rgba(232, 235, 255, 0.75);
+  background-color: #fff;
+  width: 100%;
+  padding: 37px;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+.email-box {
+  display: flex;
+}
 /*=================================
   main styling ends here
 =================================*/
