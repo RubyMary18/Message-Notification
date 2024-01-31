@@ -13,11 +13,12 @@ a {
 }
 
 /*for wrapper*/
-/* .wrapper {
-  max-width: 1350px;
-  width: 86%;
+.wrapper {
+  /* max-width: 1350px; */
+  width: 92%;
   margin: 0 auto;
-} */
+  height: 100vh;
+}
 
 /*=================================
   Header styling starts here
@@ -40,7 +41,7 @@ main {
   height: 100vh;
 }
 
-main .wrapper {
+.main-container {
   top: 50%;
   left: 50%;
   position: relative;
@@ -50,8 +51,20 @@ main .wrapper {
 
 .purple-container {
   background-color: #e8ebff;
-  width: 40.5%;
+  width: 44%;
   height: 250px;
+  border-radius: 50px;
+}
+
+.notification-container {
+  background-color: red;
+  width: 67%;
+  height: 250px;
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  top: 5px;
+  right: 15.5%;
 }
 
 /*=================================
