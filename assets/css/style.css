@@ -74,9 +74,11 @@ main {
   height: 80px;
   background-color: #0c0e41;
   border-radius: 50%;
+  margin-bottom: 18px;
 }
 
-.bell-icon {
+.bell-icon,
+.mail-icon-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,14 +91,71 @@ main {
   background-color: #fff;
   width: 100%;
   padding: 37px;
+  border-radius: 15px;
 }
 
 h1 {
   font-size: 25px;
+  margin-bottom: 30px;
 }
 
 .email-box {
   display: flex;
+  gap: 25px;
+}
+
+.mail-icon-container {
+  width: 83px;
+  height: 83px;
+  background-color: #ffe9f2;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.mail-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mail-info p {
+  font-size: 20px;
+}
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-container li {
+  display: flex;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.icon {
+  display: inline-block;
+  position: relative;
+  text-indent: -9999px;
+}
+
+.icon::before {
+  position: absolute;
+  font-family: "FontAwesome";
+  left: 0;
+  text-indent: 0;
+}
+
+.bell-icon::before {
+  content: "\f0f3";
 }
 /*=================================
   main styling ends here
